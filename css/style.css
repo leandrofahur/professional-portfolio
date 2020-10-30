@@ -21,8 +21,10 @@
 html,
 body {
   font-family: "Open Sans", sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   color: #fff;
   line-height: 1.7rem;
+  /* background-color: #ccc; */
 }
 
 h1,
@@ -35,7 +37,7 @@ h3 {
 a {
   text-decoration: none;
   color: #fff;
-  padding-: 10px;
+  /* padding: 10px; */
 }
 
 img {
@@ -59,7 +61,30 @@ img {
 
 .current {
   border-bottom: 2px solid var(--primary-color);
+  /* border-bottom: 2px solid var(--secondary-color); */
   padding-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 5rem;
+  line-height: 1.7;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.underline {
+  display: block;
+  background: var(--secondary-color);
+  margin: 0.3rem auto 1rem auto;
+  height: 2px;
+  width: 5rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 /* Header */
@@ -75,13 +100,11 @@ img {
   padding-top: 90%;
 }
 
-#home-header .header-content h1 {
-  font-size: 5rem;
-  line-height: 1.7;
-}
-
-#home-header .header-content h3 {
-  font-size: 2rem;
+#alt-header {
+  background: url(../images/cover/alt-header-light-cover.jpg) no-repeat center
+    45% / cover;
+  height: 8vh;
+  opacity: 0.8;
 }
 
 /* Nav */
@@ -112,6 +135,43 @@ img {
   cursor: pointer;
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 0.75rem;
+}
+
+/* Section */
+#about-a {
+  color: #000;
+  text-align: center;
+}
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio" "projects awards publications";
+}
+
+#about-a img {
+  grid-area: bioimage;
+}
+
+#about-a .about-content {
+  grid-area: bio;
+  text-align: justify;
+  font-size: 90%;
+  margin-left: 1rem;
+  padding: 0 1rem;
+  border-left: 3px solid var(--secondary-color);
+  background-color: #f3f3f3;
+}
+
+#about-a .projects {
+  grid-area: projects;
+}
+
+#about-a .awards {
+  grid-area: awards;
+}
+
+#about-a .publications {
+  grid-area: publications;
 }
 
 /* Footer */
