@@ -68,17 +68,24 @@ img {
 .title {
   font-size: 5rem;
   line-height: 1.7;
+  font-weight: 400;
 }
 
 .subtitle {
   font-size: 1.5rem;
 }
 
+.section-title {
+  padding-top: 30px;
+  font-size: xx-large;
+  font-weight: 400;
+}
+
 .underline {
   display: block;
   background: var(--secondary-color);
-  margin: 0.3rem auto 1rem auto;
-  height: 2px;
+  margin: 0.7rem auto 1rem auto;
+  height: 3px;
   width: 5rem;
 }
 
@@ -168,6 +175,7 @@ img {
 
 #about-a .awards {
   grid-area: awards;
+  background-color: var(--secondary-color);
 }
 
 #about-a .publications {
