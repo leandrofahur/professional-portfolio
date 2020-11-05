@@ -94,6 +94,10 @@ img {
   margin-bottom: 2rem;
 }
 
+#blink {
+  color: var(--secondary-color);
+}
+
 /* Header */
 #home-header {
   background: url(../images/cover/macbook-cover.jpg) no-repeat center
@@ -110,7 +114,7 @@ img {
 #alt-header {
   background: url(../images/cover/alt-header-light-cover.jpg) no-repeat center
     45% / cover;
-  height: 8vh;
+  height: 10vh;
   opacity: 0.8;
 }
 
